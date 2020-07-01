@@ -1,4 +1,4 @@
-# movie_search
+# movie-search
 Search all Studio Ghibli movies and the directors
 
 Some finer points:
