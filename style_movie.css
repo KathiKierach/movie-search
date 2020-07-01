@@ -1,0 +1,129 @@
+* {
+  font-family: roboto, helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue1: #e0eef6;
+  --blue1b: #b5dff7;
+  --blue2: #87c9e1;
+  --blue3: #4dabcd;
+  --blue5: #3d4857;
+  --blue4: #282d33;
+  --red1: #fb464a;
+  --red4: #ffa3ab;
+  --white: white;
+}
+
+body {
+  background-color: var(--blue1);
+  min-height: 100vh;
+  background: linear-gradient(0deg, var(--blue2) 0%, var(--blue3) 100%);
+  position: relative;
+}
+
+#wrapper {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#input {
+  font-size: 1.7rem;
+  color: var(--blue4);
+  border-radius: 25px;
+  min-width: 450px;
+  border: none;
+  padding: 0 0 0 1rem;
+  line-height: 3.5rem;
+  outline: none;
+}
+
+#input:focus {
+  background-color: none;
+  outline: none;
+}
+
+/* -----header ----*/
+
+#header {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 300;
+  padding-bottom: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+#header h1 {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+/* ---suggestions ---*/
+
+#list {
+  display: block;
+  margin: auto;
+  list-style: none;
+  padding-top: 5px;
+  border-radius: 25px;
+}
+
+#list li {
+  color: var(--blue4);
+  font-size: 1.5rem;
+  padding: 0.8rem 0 0.8rem 0;
+  max-width: 415px;
+  margin: auto;
+}
+
+#list li:nth-child(even) {
+  background-color: var(--white);
+}
+
+#list li:nth-child(odd) {
+  background-color: var(--blue1);
+}
+
+.highlight {
+  background-color: var(--blue1b);
+}
+
+.movieName {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*-----------Tooltip Action ------------*/
+
+.tooltip {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 600px;
+  background-color: rgb(255, 255, 255, 0.85);
+  color: var(--blue4);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
